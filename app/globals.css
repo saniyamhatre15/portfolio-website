@@ -1,0 +1,22 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root{--bg:#08040D;--bg2:#120817;--purple:#6408BF;--magenta:#B1164E;--lav:#E5CEFF;--text:#F7F2FC;--muted:#B7AABD;--line:rgba(229,206,255,.12)}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;overflow-x:hidden;
+background-image:radial-gradient(60rem 40rem at 85% -5%,rgba(100,8,191,.35),transparent 60%),radial-gradient(45rem 35rem at -10% 40%,rgba(177,22,78,.22),transparent 60%),linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+background-size:auto,auto,64px 64px,64px 64px;background-attachment:fixed}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif}
+.grad{background:linear-gradient(90deg,#c58bff,#ff4f93);-webkit-background-clip:text;background-clip:text;color:transparent}
+.card{background:linear-gradient(160deg,rgba(18,8,23,.85),rgba(18,8,23,.55));border:1px solid var(--line);border-radius:1.25rem;backdrop-filter:blur(10px);transition:transform .3s,border-color .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);border-color:rgba(177,22,78,.55);box-shadow:0 12px 40px -12px rgba(100,8,191,.55)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;min-height:48px;padding:0 1.5rem;border-radius:999px;font-weight:600;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(90deg,var(--purple),var(--magenta));box-shadow:0 0 28px rgba(177,22,78,.45)}
+.btn-ghost{border:1px solid var(--line);background:rgba(255,255,255,.03)}.btn-ghost:hover{border-color:var(--lav)}
+.chip{border:1px solid var(--line);background:rgba(100,8,191,.15);color:var(--lav);padding:.3rem .75rem;border-radius:999px;font-size:.85rem}
+.section{padding:5rem 1.25rem;max-width:72rem;margin:0 auto}
+.eyebrow{color:var(--lav);letter-spacing:.2em;font-size:.75rem;text-transform:uppercase}
+.portrait{border-radius:50%;box-shadow:0 0 0 2px rgba(229,206,255,.25),0 0 90px 10px rgba(100,8,191,.65),0 0 140px 30px rgba(177,22,78,.3)}
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes float{50%{transform:translateY(-10px)}}
+.reveal{animation:up .8s both}.float{animation:float 6s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}

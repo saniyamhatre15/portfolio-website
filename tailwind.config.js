@@ -1,0 +1,1 @@
+module.exports = { content: ["./app/**/*.{ts,tsx}","./components/**/*.{ts,tsx}"], theme: { extend: { fontFamily: { display: ["Space Grotesk","Inter","sans-serif"], body: ["Inter","system-ui","sans-serif"] } } }, plugins: [] };
