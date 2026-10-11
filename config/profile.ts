@@ -9,7 +9,7 @@ export const profile = {
   location: "Mumbai, Maharashtra, India",
   email: "saniyamhatre85@gmail.com",
   linkedin: "https://www.linkedin.com/in/saniya-mhatre-39394535a/",
-  github: "" as string, // TODO: add GitHub URL when available (hidden while empty)
+  github:github: "https://github.com/saniyamhatre15" as string, // TODO: add GitHub URL when available (hidden while empty)
   resume: "" as string, // TODO: put resume.pdf in /public and set "/resume.pdf" (button hidden while empty)
   portrait: "/portrait.jpg",
   intro: "B.Sc. Information Technology graduate with a strong foundation in software development and data analytics, looking for an entry-level role where I can contribute, learn from experienced teams, and grow.",
